@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="es">
+<head>
+	
+
+	
+	
+<script>
+	window.onload = function(){
+    var button = document.getElementById('autoclick');
+    setInterval(function(){
+        button.click();
+    },1000);  // this will make it click again every 1000 miliseconds
+};
+	</script>
+	
+	<!--Funcion Suma-->
+	<script>
+	function sumar(){
+		var a = 1;
+		var textBox = document.getElementById("hueco3b");
+		textBox.value++;
+		
+	} 	
+    </script>
+    <!--Funcion Resta-->
+	<script>
+		function restar(){
+			var a = 1;
+			var textBox = document.getElementById("hueco3b");
+			textBox.value--;
+			
+		} 	
+	</script>
+
+	
+	
+<link rel="stylesheet" type="text/css" href="ind.css" />
+<script type="text/javascript" async  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+<script type="text/javascript" src="func.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+<script src="script.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1 ">
+</head>
+
+<body>
+	
+	
+	<div id="barra">
+		
+		<h2>CONTEO MATARO PARC</h2>
+		
+	</div>
+	
+	
+<div id="container">
+	
+	<div class="intro">
+		<div class="introContent">
+			<h1>calculador de aforo v.1.0</h1>
+
+			
+			
+		  <h4 align="left">Instrucciones:</h4>
+			
+		  <p>Escribir en el primer cuadro el numero de personas del aforo total,en elsegundo cuadro escribir 0 para que comienze desde cero y luego ya se realiza el conteo,con los botones de sumar y restar. </p>
+			
+		  <p>Se muestra el resultado de la operacion en este caso el aforo en  la barra de progreso.</p>
+		
+		  	
+		<p></p>
+		
+			
+		
+			
+	  </div><!--EndIntroContent-->
+	</div><!--EndIntro-->
+	
+		
+	<div class="intro">
+		<div class="introContent">
+			
+		
+			
+	
+			
+		
+			
+	  </div><!--EndIntroContent-->
+	</div><!--EndIntro-->
+	
+	
+	
+
+	<!--Las 2 funciones juntas-->
+	
+	
+	
+	
+	<!--Calculadora3-->
+	
+	<div class="calculadora">
+		<div class="calcTIT"><h2>Calcula Aforo</h2></div>
+	
+	
+	<div class="calculadoraContent">
+			
+		
+		<p class="descrip"><strong>Descripción:</strong> calcular qué porcentaje del total es una cantidad.</p>
+		
+		
+		
+		<p class="pCalcu">Si el total es<input step="any" class="inp" type="number" name="hueco3a" autocomplete="off" id="hueco3a" min="0" value="200"/>, entonces <input step="any" class="inp" type="number" name="hueco3b" autocomplete="off" id="hueco3b" min="0" value="40"/> es el <input  class="inp2" type="number" name="hueco3z" autocomplete="off" id="hueco3z" readonly value="20"/>%.</p>
+	<button  class="but"  id= "autoclick" onClick="operaryenviar()">Calcular</button>
+	
+	<button  class="but"  id= "sumar" onClick="sumar()">Sumar</button>
+	<button  class="but"  id= "sumar" onClick="restar()">Restar</button>
+
+
+	<p class="titul"><span>Representación</span></p>
+	
+		
+			
+		
+	<div class="barCuadro">	
+		
+		<div class="barNumero"><div class="barNumeroNumero" id="barNumero3z"  style="margin-left: 20%;">&darr;40</div><!--endBarNumeroNumero---></div><!--endBarNumero-->
+		
+		
+		<div class="barNumero0">0</div><!--endBarNumero0--->
+		  <div class="barNumeroTotal"><div  id="barHueco3b">200</div></div><!--endBarNumero0Total-->
+		
+	  <div class="barFuera">
+		  
+		  <div class="barDentro" id="barDentro3z" style="width: 20%;">
+		  		
+				<div id="porcent3z" class="porcent">20%</div>
+		  
+		  	</div><!---EndBarDentro-->
+		</div><!---EndBarFuera-->
+		</div><!---EndBarCuadro-->
+	
+		
+		<div class="auto" id="auto" style="display: none">	
+		<p class="titul"><span>Operaciones</span></p>	
+		
+
+		
+  <table class="tabla">
+  <tbody>
+    <tr>
+      <th scope="col">\(n\)</th>
+      <th scope="col">%</th>
+    </tr>
+    <tr>
+      <td><div id="tab3b"  class="tablaX">40</div></td>
+      <td>\(x\)</td>
+    </tr>
+    <tr>
+      <td><div id="tab3a"  class="tablaX">200</div></td>
+      <td>100</td>
+    </tr>
+  </tbody>
+</table>
+	<br>
+		
+	<div id="tab3z" class="regla">$$ x = \frac{40·100}{200} = 20\% $$</div> 
+		
+	
+</div>	
+		
+		
+		
+		
+	
+	 	
+			
+	</div><!--EndCalculadoraContent-->
+	</div><!---EndCalcu3-->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	<div class="intro">
+		<div class="introContent">
+			<h1>Contador de Aforo </h1>
+
+	   
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<br><h3 class="coppy">Contador aforo v1.0 &copy;</h3>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</div><!--endContaniner-->
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
